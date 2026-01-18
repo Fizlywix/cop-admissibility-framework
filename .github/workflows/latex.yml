@@ -10,7 +10,12 @@ on:
 
 jobs:
   build:
+    if: >
+      github.event_name == 'pull_request' ||
+      contains(github.event.head_commit.message, 'build:pdf')
+
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -20,15 +25,23 @@ jobs:
           sudo apt-get install -y texlive-latex-recommended texlive-latex-extra \
             texlive-fonts-recommended texlive-science latexmk
 
-      - name: Build all main.tex files
+      - name: Build PDFs (skip placeholders)
         run: |
           set -e
-          # find papers -name "main.tex" -print0 | while IFS= read -r -d '' f; do
-          find papers/light/L2 -name "main.tex" -print0 | while IFS= read -r -d '' f; do
+          built_any=0
+          find papers -name "main.tex" -print0 | while IFS= read -r -d '' f; do
+            if ! grep -q '\\begin{document}' "$f"; then
+              echo "Skipping placeholder (no \\begin{document}): $f"
+              continue
+            fi
             d="$(dirname "$f")"
             echo "Building $f"
             (cd "$d" && latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex)
+            built_any=1
           done
+          if [ "$built_any" -eq 0 ]; then
+            echo "No buildable papers found."
+          fi
 
       - name: Upload PDFs
         uses: actions/upload-artifact@v4
