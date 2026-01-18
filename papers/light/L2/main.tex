@@ -2,7 +2,7 @@
 \usepackage{../../templates/cop/cop-macros}
 \usepackage{../../templates/cop/cop-diagrams}
 
-\title{L2: The 2×4×8 Admissibility Framework}
+\title{L2: A 2×4×8 Admissibility Framework}
 \author{Pascal Sparidaens}
 \date{}
 
@@ -10,15 +10,156 @@
 \maketitle
 
 \begin{abstract}
-% TODO: constraint-level abstract
+This paper introduces a minimal 2×4×8 coordinate system for classifying system interactions by admissibility.
+The framework does not predict behavior, reconstruct histories, or assign semantics.
+Instead, it specifies which configurations remain coherent under constraint and excludes incompatible ones.
+The framework serves as the structural basis for all subsequent papers in the COP corpus.
 \end{abstract}
 
 \section{Purpose and Non-Claims}
-\section{The Three Axes (2×4×8)}
-\section{Coordinate Notation (\DW)}
-\section{Observability and Null Dominance (Preview Only)}
+
+This paper defines the coordinate system used throughout the COP corpus.
+Its purpose is to establish a stable address space for admissible operations.
+
+The framework explicitly does not:
+\begin{itemize}
+  \item predict outcomes,
+  \item reconstruct causal histories,
+  \item assume global observability,
+  \item rely on semantic interpretation,
+  \item or require a privileged observer.
+\end{itemize}
+
+Reading discipline and illegitimate inference are addressed separately in
+\emph{L3: Reading Without Reconstruction}.
+
+\section{The Three Orthogonal Axes}
+
+Every system interaction is addressed using three independent constraints:
+direction, ledger relation, and functional role.
+
+\subsection{Direction (2)}
+
+There are exactly two admissible temporal readings:
+\begin{itemize}
+  \item Constructive (→): an operation that restricts future admissibility.
+  \item Inferential (←): an operation that excludes incompatible pasts.
+\end{itemize}
+
+Reverse operations do not reconstruct events; they only prune impossibilities.
+The limits of reverse reasoning are treated in detail in
+\emph{L3: Reading Without Reconstruction}.
+
+\subsection{Ledger Relation (4)}
+
+Relative to commitment, there are exactly four stable surfaces:
+\begin{enumerate}
+  \item Latent / Option-space
+  \item Write / Commit (↔ Backward Exclusion)
+  \item Propagation (↔ Dependency Trace)
+  \item Closure / Lock-in (↔ Invariant Inference)
+\end{enumerate}
+
+These surfaces are structural necessities.
+Systems that violate them lose coherence.
+
+\subsection{Functional Role (8)}
+
+Across domains, eight functional roles recur symmetrically under forward and reverse reading:
+\begin{enumerate}
+  \item Emergence / Admission
+  \item Stabilization / Persistence
+  \item Coupling / Connectivity
+  \item Optimization / Selectivity
+  \item Saturation / Limitation
+  \item Maintenance / Support
+  \item Backgrounding / Infrastructure
+  \item Exit / Elimination
+\end{enumerate}
+
+Roles do not encode meaning or domain semantics.
+They specify admissible function only.
+
+\section{Coordinate Notation (D.W.R)}
+
+Each interaction is addressed as a coordinate of the form:
+\[
+\text{D.W.R}
+\]
+where D is direction, W is ledger relation, and R is functional role.
+
+Examples:
+\begin{itemize}
+  \item 1.2.3 — forward commit of coupling
+  \item 2.2.3 — backward exclusion of impossible connectivity
+  \item 1.4.7 — closure into infrastructure
+  \item 2.4.7 — inference of infrastructure invariants
+\end{itemize}
+
+Notation is purely addressing.
+Interpretation beyond admissibility is explicitly forbidden.
+
+\section{Admissibility Rules}
+
+All admissible operations obey the following minimal rules:
+\begin{itemize}
+  \item Writes are additive; no operation deletes history.
+  \item Reverse operations exclude histories; they do not replay them.
+  \item No global decider or total audit is assumed.
+\end{itemize}
+
+Operational behavior under saturation is demonstrated in
+\emph{L5: Operational Admissibility in a Bounded Structure}.
+
+\section{Null Dominance and Observability}
+
+A central consequence of the framework is null dominance:
+constraints are invisible while satisfied.
+
+Most of the table is structurally dark:
+latent states, infrastructure, and reverse structure are typically legible only
+under violation or closure.
+
+Structural visibility under stress is examined in
+\emph{L7: Structural Visibility Under Stress}.
+
+\section{Table Interpretation}
+
+The 2×4×8 table is not an enumeration of elements.
+It is a pruning snapshot of survivability.
+
+A “stable element” corresponds to regions of trajectories that repeatedly:
+\begin{itemize}
+  \item close cleanly,
+  \item infer invariants,
+  \item background into infrastructure,
+  \item and disappear without forcing reset.
+\end{itemize}
+
+This interpretation is developed further in
+\emph{L6: The Periodic Table Is Not About Elements}.
+
+\section{Relation to the COP Corpus}
+
+This paper provides the coordinate system used by:
+\begin{itemize}
+  \item \emph{L3: Reading Without Reconstruction}
+  \item \emph{L4: Diagrammatic Addressing in the COP Framework}
+  \item \emph{L5: Operational Admissibility in a Bounded Structure}
+  \item \emph{L6: The Periodic Table Is Not About Elements}
+  \item \emph{L7: Structural Visibility Under Stress}
+  \item \emph{L8: Applied Constraint Surfaces}
+\end{itemize}
+
+Paradoxes and non-totality limits are treated separately in the Shadow corpus.
+
 \section{Summary of Admissible Use}
+
+The 2×4×8 framework is an addressing system, not an explanatory model.
+Correct use consists in excluding incompatible configurations.
+When constraints are satisfied, the structure disappears into background infrastructure.
 
 \bibliographystyle{unsrt}
 \bibliography{references}
+
 \end{document}
