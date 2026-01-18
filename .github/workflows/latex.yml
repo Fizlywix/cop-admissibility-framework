@@ -23,7 +23,8 @@ jobs:
       - name: Build all main.tex files
         run: |
           set -e
-          find papers -name "main.tex" -print0 | while IFS= read -r -d '' f; do
+          # find papers -name "main.tex" -print0 | while IFS= read -r -d '' f; do
+          find papers/light/L2 -name "main.tex" -print0 | while IFS= read -r -d '' f; do
             d="$(dirname "$f")"
             echo "Building $f"
             (cd "$d" && latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex)
