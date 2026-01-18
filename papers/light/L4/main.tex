@@ -1,1 +1,156 @@
+\input{../../../templates/arxiv/arxiv.tex}
+\usepackage{../../../templates/cop/cop-macros}
+\usepackage{../../../templates/cop/cop-diagrams}
 
+\title{L4: Diagrammatic Addressing in the COP Framework}
+\author{Pascal Sparidaens}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper specifies the diagrammatic addressing rules used in the COP framework.
+It does not explain, interpret, or derive the diagrams. Instead, it defines the admissible
+operations encoded by the visual language and the conditions under which a diagrammatic
+reading is valid.
+\end{abstract}
+
+\section{Purpose and Scope}
+
+This paper serves as a diagrammatic legend for the COP framework.
+Its function is to define how diagrams are read, not what they mean. :contentReference[oaicite:1]{index=1}
+
+The figures associated with this paper (Figures 1--3) are constraint objects.
+They do not illustrate concepts introduced here. Rather, the present text specifies
+the addressing rules that make those diagrams admissible. :contentReference[oaicite:2]{index=2}
+
+No semantic interpretation, narrative explanation, or domain reconstruction is permitted. :contentReference[oaicite:3]{index=3}
+
+\section{Diagrammatic Objects}
+
+A COP diagram consists of the following visual objects: :contentReference[oaicite:4]{index=4}
+\begin{itemize}
+  \item Write boxes
+  \item Arrows
+  \item Copter structures
+  \item Signs ($+$, $-$)
+  \item Seams and return regions
+\end{itemize}
+
+Each object has a single operational role.
+No object carries semantic meaning beyond its admissible function. :contentReference[oaicite:5]{index=5}
+
+\section{Write Boxes}
+
+Write boxes denote loci of commitment.
+A write does not represent a state, value, or proposition.
+It represents the act of restriction itself. :contentReference[oaicite:6]{index=6}
+
+All writes are additive.
+No write erases or overwrites a prior write.
+What is excluded remains excluded without reconstruction. :contentReference[oaicite:7]{index=7}
+
+\section{Arrows}
+
+Arrows indicate addressing relations to a write.
+They do not indicate flow, time, causation, hierarchy, or direction in space. :contentReference[oaicite:8]{index=8}
+
+An arrow always refers to the write it touches.
+Arrow orientation is local and does not encode global ordering. :contentReference[oaicite:9]{index=9}
+
+Arrows do not initiate operations.
+They mark where admissibility is evaluated. :contentReference[oaicite:10]{index=10}
+
+\section{Signs}
+
+The symbols $+$ and $-$ denote admissible pressure types: :contentReference[oaicite:11]{index=11}
+\begin{itemize}
+  \item $+$ indicates forward restriction
+  \item $-$ indicates reverse exclusion
+\end{itemize}
+
+Signs are local.
+They do not cancel, balance, or negate each other.
+Multiple signs may be active concurrently. :contentReference[oaicite:12]{index=12}
+
+No sign encodes success, failure, progress, or regression. :contentReference[oaicite:13]{index=13}
+
+\section{Copter Structures}
+
+Copter structures encode resolution change.
+They do not encode traversal, motion, or direction. :contentReference[oaicite:14]{index=14}
+
+A primary copter admits both upward and downward resolution addressing.
+Branch copters are resolution-restricted and may only resolve downward. :contentReference[oaicite:15]{index=15}
+
+Copter symmetry does not imply operational equivalence. :contentReference[oaicite:16]{index=16}
+
+\section{Return and Seams}
+
+Return is not a destination and is not commanded by arrows.
+Return is revealed when no further admissible distinction is possible. :contentReference[oaicite:17]{index=17}
+
+Seams denote adjacency without traversal.
+They enforce return structurally rather than dynamically. :contentReference[oaicite:18]{index=18}
+
+Return may occur concurrently with both forward restriction and reverse exclusion. :contentReference[oaicite:19]{index=19}
+
+\section{Progressive Exposure of Operations}
+
+Figures 1--3 differ only by admissible operation exposure: :contentReference[oaicite:20]{index=20}
+\begin{itemize}
+  \item Figure 1 admits forward restriction ($+$).
+  \item Figure 2 admits forward and reverse operations ($+$, $-$).
+  \item Figure 3 admits forward restriction, reverse exclusion, and return.
+\end{itemize}
+
+No new rules are introduced across figures.
+Only admissible operations are progressively exposed. :contentReference[oaicite:21]{index=21}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{figures/fig1-forward-only.jpg}
+\caption{Constraint diagram admitting forward restriction ($+$) only. Arrows denote addressing relations to writes; they do not encode causation, flow, or traversal.}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{figures/fig2-forward-reverse.jpg}
+\caption{Constraint diagram admitting both forward restriction ($+$) and reverse exclusion ($-$). Signs are local pressure types and do not encode success, failure, progress, or regression.}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{figures/fig3-return-exposed.jpg}
+\caption{Constraint diagram with return exposed. Return is structural (not causal) and becomes legible only when no further admissible distinction is possible. Seams denote adjacency without traversal.}
+\end{figure}
+
+\section{Illegitimate Readings}
+
+The following readings are explicitly inadmissible: :contentReference[oaicite:22]{index=22}
+\begin{itemize}
+  \item Treating arrows as causal flow
+  \item Treating copters as hierarchy
+  \item Treating return as reset or origin
+  \item Assigning domain semantics to visual objects
+  \item Interpreting diagrams as explanations
+\end{itemize}
+
+Any reading requiring reconstruction violates the framework. :contentReference[oaicite:23]{index=23}
+
+\section{Relation to the COP Corpus}
+
+This paper depends on:
+\begin{itemize}
+  \item \emph{L2: A 2$\times$4$\times$8 Admissibility Framework}
+  \item \emph{L3: Reading Without Reconstruction}
+\end{itemize}
+No additional assumptions are introduced. :contentReference[oaicite:24]{index=24}
+
+\section{Conclusion}
+
+The diagrams associated with this paper are complete insofar as they obey the addressing rules specified here.
+They do not require explanation. They constrain admissible reading. :contentReference[oaicite:25]{index=25}
+
+\end{document}
