@@ -10,9 +10,9 @@
 
 \begin{abstract}
 This document specifies the Caps of the COP framework.
-Caps define structural boundary conditions.
+Caps define non-operational structural boundary conditions.
 They are not operating paradoxes and do not participate in admissible operation.
-Their sole purpose is to bound the framework before and after use.
+Their sole purpose is to bound the framework at entry and at return.
 \end{abstract}
 
 \section{Status and Role}
@@ -23,48 +23,52 @@ It is delimiting.
 Caps:
 \begin{itemize}
   \item are not part of the operating paradox set,
-  \item are not traversable,
-  \item are not resolvable,
+  \item are gates, not states,
+  \item are not traversable as operations,
   \item and are not subject to interpretation.
 \end{itemize}
 
-Caps define where the framework begins and where it must stop.
+Caps define where the framework may begin
+and where it may return.
 
 \section{Caps}
 
 The COP framework contains exactly two Caps.
 
-\subsection*{COP-00 — Null Dominance \hfill (RI)}
+\subsection*{COP-00 — ALL \texttt{<->} NULL (Entry Gate)}
 
-Null Dominance constrains admissibility before any structure appears.
-
-Operationally:
-\begin{itemize}
-  \item correct operation leaves no trace,
-  \item absence of signal is admissible,
-  \item visibility does not imply importance.
-\end{itemize}
-
-COP-00 forbids foregrounding what functions correctly.
-
-\subsection*{COP-15 — Background Operation \hfill (RI)}
-
-Background Operation constrains admissibility after structure is in place.
+COP-00 bounds admissibility prior to any operation.
 
 Operationally:
 \begin{itemize}
-  \item sustaining infrastructure must not appear as an actor,
-  \item background processes do not enter the foreground,
-  \item enabling conditions are not operational objects.
+  \item ALL is the continuity of what-can-exist,
+  \item NULL is the absence of writeability,
+  \item correct operation may remain non-visible.
 \end{itemize}
 
-COP-15 forbids instrumentalizing the framework itself.
+COP-00 forbids treating visibility as priority
+and forbids premature articulation.
+
+\subsection*{ICOP-00 — 0ALL \texttt{<->} ALL (Return Gate)}
+
+ICOP-00 bounds admissibility at return.
+
+Operationally:
+\begin{itemize}
+  \item 0ALL is the explicit dissolution of distinctions,
+  \item return does not preserve local histories,
+  \item re-entry may carry non-local constraint signatures
+        not derivable from the local forward path.
+\end{itemize}
+
+ICOP-00 forbids treating return as internal continuation
+and forbids narrating re-entry as resolution.
 
 \section{Global Notes}
 
 \begin{itemize}
-  \item Caps are Reverse-Inverse (RI).
-  \item Caps are not paired as Shadow Axes.
+  \item Caps are not Operating Paradoxes.
+  \item Caps are not Shadow Axes and are not paired.
   \item Caps do not license forward or reverse inference.
   \item Caps override all other COP sections.
 \end{itemize}
@@ -73,12 +77,13 @@ COP-15 forbids instrumentalizing the framework itself.
 
 Caps occupy the outermost structural layer.
 
-They are positioned:
+They are positioned outside:
 \begin{itemize}
-  \item above Operating Paradoxes,
-  \item outside Light Axes,
-  \item outside Shadow Axes,
-  \item and above Extension and Non-Extension Rules.
+  \item Operating Paradoxes (COP \& ICOP 1--8),
+  \item Light Axes,
+  \item Shadow Axes,
+  \item Forbidden Moves,
+  \item Extension / Non-Extension rules.
 \end{itemize}
 
 Any conflict is resolved in favor of the Caps.
@@ -88,6 +93,6 @@ Any conflict is resolved in favor of the Caps.
 Caps are not used.
 They are respected.
 
-Foregrounding a Cap indicates misuse.
+Foregrounding a Cap indicates inadmissible use.
 
 \end{document}
