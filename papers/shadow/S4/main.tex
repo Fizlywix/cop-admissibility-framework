@@ -25,8 +25,8 @@ It is a constraint marker.
 
 S4 binds one Shadow axis:
 \begin{itemize}
-  \item \textbf{Forward constraint:} COP-05 (Stability Band),
-  \item \textbf{Reverse constraint:} COP-13 (Responsibility Must Be Network-Routed).
+  \item \textbf{Forward constraint:} COP-04 (Stability Band),
+  \item \textbf{Reverse constraint:} ICOP-04 (Responsibility Must Be Network-Routed).
 \end{itemize}
 
 S4 exists to exclude illegitimate moves that arise when stability is confused with dominance,
@@ -47,7 +47,7 @@ Any reading that turns S4 into a governance, control, or accountability model is
 
 \section{Shadow Axis S4}
 
-\subsection{Forward: COP-05 Stability Band}
+\subsection{Forward: COP-04 Stability Band}
 
 The stability band constrains forward admissibility:
 operation is viable only within bounded ranges.
@@ -63,7 +63,7 @@ Operationally:
 Stability does not imply control.
 It indicates tolerated variance.
 
-\subsection{Reverse: COP-13 Network-Routed Responsibility}
+\subsection{Reverse: ICOP-04 Network-Routed Responsibility}
 
 Network-routed responsibility constrains reverse legibility:
 effects propagate through networks, not individuals.
@@ -99,18 +99,14 @@ Forward operation proceeds only along \texttt{+} branches:
 what manifests is continued operation within acceptable bounds.
 Local actors experience margins, not total system behavior.
 
-\subsection{Global diagnosability}
+\subsection{Non-local diagnosability}
 
-Global boundary violations become detectable as:
-\begin{itemize}
-  \item cascading failures beyond local thresholds,
-  \item diffuse harm without a single origin,
-  \item post-hoc blame reassignment,
-  \item demands for centralized control.
-\end{itemize}
+Boundary violations are not locally attributable.
+They become detectable only non-locally as cascading effects,
+diffuse harm, or pressure toward centralized control.
 
-These signals indicate that the stability band has been exceeded,
-and responsibility has been misread.
+Such signals are diagnostic only.
+They must not be moralized or personalized.
 
 \section{Illegitimate Moves (Forbidden Inferences)}
 
@@ -150,8 +146,8 @@ These signals mark boundary pressure, not moral failure.
 Correct use stops at the boundary.
 
 \begin{itemize}
-  \item If stability is treated as control, stop (COP-05).
-  \item If responsibility is localized, stop (COP-13).
+  \item If stability is treated as control, stop (COP-04).
+  \item If responsibility is localized, stop (ICOP-04).
   \item If intervention replaces constraint analysis, stop.
 \end{itemize}
 
@@ -165,7 +161,6 @@ They do not explain or illustrate processes.
 
 \begin{figure}[h]
   \centering
-  % Placeholder for stability-band overlay
   \includegraphics[width=0.92\linewidth]{figures/fig3-return-exposed_S4-overlay.pdf}
   \caption{S4 constraint overlay. The highlighted region marks admissible operation within stability bands and the distributed nature of responsibility under reverse reading.}
   \label{fig:s4-overlay}
@@ -173,7 +168,6 @@ They do not explain or illustrate processes.
 
 \begin{figure}[h]
   \centering
-  % Placeholder for network responsibility slice
   \includegraphics[width=0.72\linewidth]{figures/state-cube_S4-slice.pdf}
   \caption{Optional constraint slice. Stability bands constrain operation; responsibility propagates across the network. This figure marks the boundary only.}
   \label{fig:s4-cube}
@@ -191,4 +185,3 @@ Nothing further is added.
 \bibliography{references}
 
 \end{document}
-
