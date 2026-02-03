@@ -1,154 +1,147 @@
-% D1.tex — Paper D-1: Structural Equivalence Under Admissibility Constraints
-% OSF / arXiv compatible
-\documentclass[11pt]{article}
+\input{../../../templates/arxiv/arxiv.tex}
+\usepackage{../../../templates/cop/cop-macros}
+\usepackage{../../../templates/cop/cop-diagrams}
 
-% ---------- Basics ----------
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage{microtype}
-\usepackage{geometry}
-\geometry{margin=1in}
-
-\usepackage{amsmath,amssymb}
-\usepackage{hyperref}
-\hypersetup{
-  colorlinks=true,
-  linkcolor=blue,
-  citecolor=blue,
-  urlcolor=blue,
-  pdftitle={Structural Equivalence Under Admissibility Constraints},
-  pdfauthor={Pascal Sparidaens}
-}
-
-\usepackage{enumitem}
-\setlist{nosep}
-
-% ---------- Title ----------
-\title{\textbf{Structural Equivalence Under Admissibility Constraints}}
-\author{
-  Pascal Sparidaens\\
-  \small Independent Researcher\\
-  \small \texttt{pascalsparidaens@gmail.com}
-}
-\date{\today}
+\title{D1: COP as a Persistence Grammar}
+\author{Pascal Sparidaens}
+\date{}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-This paper presents a derived demonstration (D-1) within the
-2$\times$4$\times$8 admissibility framework.
-It shows that a broad class of bounded branching structures exhibit
-admissibility behavior equivalent to that defined by the framework,
-without introducing new operators, interpretations, or semantic claims.
-
-The purpose of this paper is not explanation, but structural correspondence.
+This paper introduces no new COP structure.
+It formalizes the observation that any system exhibiting persistence under
+constraint necessarily conforms to the Canonical Operating Paradoxes (COP).
+The result is not a theory of life, systems, or reality, but a grammar of
+admissibility shared by all branching-flow structures once semantic content
+is removed.
 \end{abstract}
 
-\section{Scope and Relation to Prior Work}
-This paper is a derived study within the constrained sequence of
-2$\times$4$\times$8 admissibility papers.
+\section{Purpose}
 
-The admissibility coordinate system is defined in
-\emph{A 2$\times$4$\times$8 Admissibility Framework}.
-Rules governing illegal reconstruction are specified in
-\emph{Reading Without Reconstruction}.
-Diagrammatic addressing conventions are defined in
-\emph{Diagrammatic Addressing in the COP Framework}.
+This paper serves a single role:
+to expose the structural equivalence between the COP framework and a minimal,
+semantics-free persistence skeleton.
 
-The present paper introduces no new admissibility rules, no new symbols,
-and no additional diagrammatic conventions. It derives a structural
-correspondence using only the existing framework.
-
-\section{Purpose of the Demonstration}
-Admissibility frameworks are frequently criticized for being overly abstract.
-This paper addresses that criticism by demonstrating how the framework
-constrains a familiar class of bounded structures, while maintaining
-strict discipline against interpretation.
-
-No claims are made regarding physical causation, biological function,
-cognition, or ontology. The structure considered serves only as a
-constraint surface.
-
-\section{Definition of the Constraint Surface}
-Consider a bounded structure characterized by:
+It does not:
 \begin{itemize}
-  \item a finite set of positions,
-  \item branching adjacency relations,
-  \item directed throughput between adjacent positions,
-  \item unavoidable local loss,
-  \item and selective removal of relations over time.
+  \item define life,
+  \item explain systems,
+  \item propose mechanisms,
+  \item or introduce ontological claims.
 \end{itemize}
 
-No semantic interpretation of these elements is assumed.
-They are defined purely by their constraint properties.
+Its sole contribution is to show that COP is not domain-specific,
+but structurally unavoidable for any system that persists.
 
-\section{Forward Admissibility and Restriction}
-Within the admissibility framework, forward operations irreversibly
-restrict the set of future admissible configurations.
+\section{Preliminary Constraint}
 
-In a bounded branching structure, unrestricted branching is not sustainable.
-As forward restriction accumulates, some relations must be excluded in order
-to maintain coherence under finite constraints.
+All references to empirical domains, metaphors, or interpretations
+(tree structures, organisms, networks, cognition, etc.)
+are explicitly excluded.
 
-This selective restriction does not negate prior configurations.
-It limits only what may follow.
+Only abstract structure is admissible.
 
-\section{Reverse Admissibility and Exclusion}
-Reverse admissibility operates concurrently with forward restriction.
-Reverse operations do not reconstruct earlier states.
-They exclude histories that are incompatible with present constraints.
+\section{Minimal Persistence Skeleton}
 
-As forward restriction accumulates, multiple forward trajectories may remain
-admissible while certain past interpretations become impossible.
-This asymmetry does not imply reversibility or symmetry between directions.
+Consider a system $S$ defined only by:
 
-\section{Structural Equivalence}
-The behaviors described above correspond directly to admissibility constraints
-already defined in the framework:
 \begin{itemize}
-  \item branching corresponds to multiplicity without disorder,
-  \item throughput corresponds to admissible process,
-  \item local loss enforces selectivity,
-  \item and pruning corresponds to restriction under bounded capacity.
+  \item a directed graph $G = (V,E)$,
+  \item a positive flow on edges,
+  \item unavoidable loss at nodes,
+  \item and a pruning operation removing excess structure.
 \end{itemize}
 
-No additional operators are required to account for these behaviors.
-They are enforced by admissibility alone.
+No node possesses global knowledge.
+No element carries semantic meaning.
 
-Any bounded branching structure exhibiting irreversible restriction,
-local loss, and selective persistence will therefore display the same
-admissibility behavior, independent of domain, scale, or material composition.
+Persistence is defined minimally as:
+\[
+\exists t \to \infty \;\; \text{s.t.} \;\; G_t \neq \emptyset.
+\]
 
-\section{Limits of Interpretation}
-This demonstration does not license interpretation.
-It does not explain the structure under consideration, nor does it
-represent any external system.
+No optimization, purpose, or explanation is assumed.
 
-Any attempt to read this correspondence as causal, explanatory, or
-ontological constitutes an illegal reconstruction and falls outside
-the admissibility of the framework.
+\section{Structural Necessity of COP}
 
-\section{Conclusion}
-This paper has demonstrated a structural equivalence between bounded
-branching structures and the admissibility framework, without introducing
-new rules, semantics, or interpretations.
+The persistence skeleton above enforces the following constraints:
 
-The result is not an explanation, but a confirmation of constraint
-compatibility. That suffices for the purpose of a derived admissibility study.
+\begin{itemize}
+  \item branching must occur,
+  \item flow must be continuous,
+  \item loss must be bounded,
+  \item excess structure must be pruned,
+  \item total possibility cannot be saturated.
+\end{itemize}
 
-\section*{References}
-\begin{enumerate}
-\item Pascal Sparidaens,
-\emph{A 2$\times$4$\times$8 Admissibility Framework: A Periodic-Table View of Stable System Interactions},
-OSF Preprint, 2026.
-\item Pascal Sparidaens,
-\emph{Reading Without Reconstruction: Illegal Inference in the 2$\times$4$\times$8 Admissibility Framework},
-OSF Preprint, 2026.
-\item Pascal Sparidaens,
-\emph{Diagrammatic Addressing in the COP Framework},
-OSF Preprint, 2026.
-\end{enumerate}
+These constraints map directly onto the COP operators:
+
+\begin{itemize}
+  \item branching enforces COP02 (1 $\rightarrow$ VEEL),
+  \item flow enforces COP05 (dynamiek),
+  \item bounded loss enforces COP06 (selectie),
+  \item pruning enforces COP06 shadow behavior,
+  \item saturation pressure enforces COP07 (knife-edge).
+\end{itemize}
+
+No alternative admissible operators exist.
+Any system violating these constraints collapses.
+
+\section{ICOP as Reverse Legibility}
+
+When pruning exceeds flow,
+the system enters reverse legibility.
+
+This behavior corresponds to ICOP traversal:
+structure dissolves without reconstructable history.
+Reverse inspection yields diagnostics only,
+never generative inference.
+
+ICOP does not describe destruction.
+It marks the loss of admissible continuation.
+
+\section{Non-Implications}
+
+This equivalence does not imply that:
+
+\begin{itemize}
+  \item all persistent systems are identical,
+  \item COP explains persistence,
+  \item COP models reality,
+  \item or COP predicts system behavior.
+\end{itemize}
+
+COP functions strictly as an admissibility grammar.
+It constrains which operations remain coherent.
+It does not explain why systems exist.
+
+\section{Why This Is Not a Theory}
+
+The mapping demonstrated here is forced, not explanatory.
+
+COP is not derived from persistence.
+Persistence is not derived from COP.
+
+Rather:
+any system that persists while respecting constraint
+must already obey COP,
+or cease to exist as a system.
+
+This is a structural tautology,
+not a theoretical claim.
+
+\section{Closure}
+
+Once semantics are stripped,
+persistent systems share a common grammar.
+
+That grammar is COP.
+
+No further interpretation is admissible.
+
+\bibliographystyle{unsrt}
+\bibliography{references}
 
 \end{document}
