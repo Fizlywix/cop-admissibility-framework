@@ -3,7 +3,7 @@ name: Build PDFs
 on:
   push:
     paths:
-      - "papers/**"
+      - "paradoxes/**"
       - "templates/**"
       - ".github/workflows/**"
   pull_request:
@@ -29,7 +29,7 @@ jobs:
         run: |
           set -e
           built_any=0
-          find papers -name "main.tex" -print0 | while IFS= read -r -d '' f; do
+          find paradoxes -name "main.tex" -print0 | while IFS= read -r -d '' f; do
             if ! grep -q '\\begin{document}' "$f"; then
               echo "Skipping placeholder (no \\begin{document}): $f"
               continue
@@ -47,5 +47,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: pdfs
-          path: papers/**/main.pdf
+          path: paradoxes/**/main.pdf
           if-no-files-found: ignore
